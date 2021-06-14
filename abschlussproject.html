@@ -1,0 +1,296 @@
+<html><head><title>ASHM. Expro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head><body>
+
+    <!-- Side Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+      <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+      <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+      <a href="#" class="w3-bar-item w3-button">Link 4</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="w3-container w3-theme w3-padding" id="myHeader">
+      <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+      <div class="w3-center">
+      <h4>Abschlussprojekt</h4>
+      <h1 class="w3-xxxlarge w3-animate-bottom">SELENIUM</h1>
+        <div class="w3-padding-32">
+          <button class="w3-btn w3-xlarge w3-theme-dark w3-hover-teal" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">TEXT TEXT TEXT</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Modal -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-top">
+          <header class="w3-container w3-theme"> 
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">×</span>
+            <h4>Oh snap! We just showed you a modal..</h4>
+            <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+          </header>
+          <div class="w3-padding">
+            <p>Cool huh? Ok, enough teasing around..</p>
+            <p>Go to our <a class="w3-btn" href="/w3css/default.asp">TEXT TEXT TEXT</a> TEXT!</p>
+          </div>
+          <footer class="w3-container w3-theme">
+            <p>Modal footer</p>
+          </footer>
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="l1 - l12">
+      <div class="w3-card w3-container" style="min-height:460px">
+      <h3>Bewertungen</h3><br>
+      <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:60px"></i>
+      <br>Select a file: <input type="file" id="myFile">
+      <button onclick='processFile()'>Process</button><br>
+      <table id="myTable"></table>
+      <h4 class="bewertung"></h4>
+      </div>
+    </div>
+
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+      <h2>OUR TEAM</h2>
+      <p>the team</p>
+
+      <div class="w3-row"><br>
+
+      <div class="w3-quarter">
+
+        <h3>Anna</h3>
+        <p>Web Developerin</p>
+      </div>
+
+      <div class="w3-quarter">
+
+        <h3>Malek</h3>
+        <p>Web Developer</p>
+      </div>
+
+      <div class="w3-quarter">
+
+        <h3>Bakera</h3>
+        <p>Web Developer</p>
+      </div>
+
+      <div class="w3-quarter">
+
+        <h3>Salah Elyasi</h3>
+        <p>Web Developer</p>
+      </div>
+
+      </div>
+      </div>
+
+    </div>
+
+
+
+    <hr>
+
+    <div class="w3-center">
+      <br>
+      <a class="w3-button w3-theme">Button</a>
+      <a class="w3-button w3-theme">Button</a>
+      <a class="w3-button w3-theme-d3 w3-disabled">Button</a>
+      <br><br>
+      <a class="w3-button w3-circle w3-large w3-black"><i class="fa fa-plus"></i></a>
+      <a class="w3-button w3-circle w3-large w3-theme"><i class="fa fa-plus"></i></a>  
+      <a class="w3-button w3-circle w3-large w3-card-4"><i class="fa fa-plus"></i></a>
+    </div>
+    <br>
+    <div class="w3-center">
+      <div class="w3-dropdown-hover">
+        <button class="w3-button w3-theme">Dropdown <i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-border">
+          <a href="#" class="w3-bar-item w3-button">Link 1</a>
+          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <hr>
+    <div class="w3-center">
+      <h2>Pagination</h2>
+      <!-- Pagination -->
+      <div class="w3-center w3-padding-32">
+        <div class="w3-bar">
+          <a href="#" class="w3-bar-item w3-button w3-hover-theme">«</a>
+          <a href="#" class="w3-bar-item w3-button w3-theme w3-hover-theme">1</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-theme">2</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-theme">3</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-theme">4</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-theme">5</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-theme">»</a>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-dark">
+      <h3>Footer</h3>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+        <span class="w3-text w3-theme w3-padding">Go To Top</span>&nbsp;   
+        <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+        <i class="fa fa-chevron-circle-up"></i></span></a>
+      </div>
+      <p>Remember to check out our&nbsp;&nbsp;<a href="w3css_references.asp" class="w3-btn w3-theme" target="_blank">W3.CSS Reference</a></p>
+    </footer>
+
+    <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+    <script>
+    function processFile() {
+      var fileSize = 0;
+      //get file
+      var theFile = document.getElementById("myFile");
+
+      var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.csv|.txt)$/;
+      //check if file is CSV
+      if (regex.test(theFile.value.toLowerCase())) {
+      //check if browser support FileReader
+          if (typeof (FileReader) != "undefined") {
+        //get table element
+          var table = document.getElementById("myTable");
+          var headerLine = "";
+          //create html5 file reader object
+          var myReader = new FileReader();
+          // call filereader. onload function
+          myReader.onload = function(e) {
+              var content = myReader.result;
+              //split csv file using "\n" for new line ( each row)
+              var lines = content.split("\r");
+              //loop all rows
+              for (var count = 0; count < lines.length; count++) {
+                  //create a tr element
+                  var row = document.createElement("tr");
+                  //split each row content
+                  var rowContent = lines[count].split(",");
+                  //loop throw all columns of a row
+                  for (var i = 0; i < rowContent.length; i++) {
+                    //create td element 
+                      var cellElement = document.createElement("td");
+                      if (count == 0) {
+                          cellElement = document.createElement("th");
+                      } else {
+                          cellElement = document.createElement("td");
+                      }
+                      //add a row element as a node for table
+                      var cellContent = document.createTextNode(rowContent[i]);
+
+                      cellElement.appendChild(cellContent);
+                      //append row child
+                      row.appendChild(cellElement);
+                  }
+                  //append table contents
+                  myTable.appendChild(row);
+              }
+          }
+          //call file reader onload
+            myReader.readAsText(theFile.files[0]);
+          }
+          else 
+          {
+                alert("This browser does not support HTML5.");
+          }
+
+      }
+      else {
+                  alert("Please upload a valid CSV file.");
+      }
+      return false;
+}
+//-----------------------------------------------
+    // Side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "100%";
+      x.style.fontSize = "40px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+
+    // Tabs
+    function openCity(evt, cityName) {
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      var activebtn = document.getElementsByClassName("testbtn");
+      for (i = 0; i < x.length; i++) {
+        activebtn[i].className = activebtn[i].className.replace(" w3-theme-dark", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " w3-theme-dark";
+    }
+
+    var mybtn = document.getElementsByClassName("testbtn")[0];
+    mybtn.click();
+
+    // Accordions
+    function myAccFunc(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+
+    // Slideshows
+    var slideIndex = 1;
+
+    function plusDivs(n) {
+      slideIndex = slideIndex + n;
+      showDivs(slideIndex);
+    }
+
+    function showDivs(n) {
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+
+    showDivs(1);
+
+    // Progress Bars
+    function move() {
+      var elem = document.getElementById("myBar");   
+      var width = 1;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width == 100) {
+          clearInterval(id);
+        } else {
+          width++; 
+          elem.style.width = width + '%'; 
+          elem.innerHTML = width * 1  + '%';
+        }
+      }
+    }
+    </script>
+    <script src="index.js"></script>
+
+    </body></html> 
