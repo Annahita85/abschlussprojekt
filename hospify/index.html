@@ -1,0 +1,195 @@
+<html><head><title>ASHM. Expro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Two+Tone"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+
+    </head><body onload="Herzogin_Elisabeth_Hospital()">
+    
+    <!-- Side Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+      <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+      <button class="w3-bar-item w3-button" onclick="w3_close()">Zurück <i class="fa fa-remove"></i></button>
+      <a href="web.html" class="w3-bar-item w3-button">Sentymental Analyse</a>
+      <a href="https://www.klinikbewertungen.de/" class="w3-bar-item w3-button" target="blank" >Klinikbewertungen</a>
+      <a href="https://www.nlga.niedersachsen.de/startseite/" class="w3-bar-item w3-button" target="blank" >Gesundheitsamt</a>
+      <!--<a href="#" class="w3-bar-item w3-button">Link 4</a> -->
+    </nav>
+
+     <!-- Header -->
+     <header class="w3-container w3-theme w3-padding" id="myHeader">
+      
+      <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+      <div class="w3-center">
+      <h4>AHSM Expro.</h4>
+      <img src="imgs/ASHM_ExproLogo.png" alt="logo" style="width:100px;height:100px;">
+      <h1 class="w3-xxxlarge w3-animate-bottom">HospiFy</h1>
+      </div>
+      <div>
+      <p><h4 class="w3-center">Analyse der Bewertungen der Kliniken in Niedersachsen</h4></p>
+      
+    </header>
+    <br>
+    <br>
+    
+    
+    <!-- Modal -->
+    <div>
+      <p class="w3-center" > <h3 class="w3-center" >Befor Sie sich zu einer Klinik entscheiden, entdecken Sie, ob die Ihnen passt!!!</h3></p>
+      
+      <p class="w3-center">Nachdem unser Team mit der Analyse der Kundenzufridenheit der Kliniken für lange Zeit sich beschaftigt hat, 
+      teilt unser Team das Ergebniss mit Ihnen. </p>
+      <p class="w3-center" > <h2 class="w3-center" >Einfach eine Klinik auswählen, dann entdecken</h2></p>
+    </div>
+    <!-- dropdown -->
+    <br>
+    <div class="d-flex justify-content-center">
+    <select class="form-select form-select-lg mb-3 w-50" aria-label="Default select example">
+        <label >Klinik auswählen:</label>
+        <option selected onclick="Herzogin_Elisabeth_Hospital()">HEH Herzogin Elisabeth Hospital</option>
+        <option onclick="Klinik_Am_Zuckerberg()">Klinik Am Zuckerberg</option>
+        <option onclick="Klinikum_Wolfsburg()">Klinikum Wolfsburg</option>
+      </select>
+    </div>
+    <br>
+   
+      
+      <br>
+      <!--
+      <div>
+        <span class="material-icons-two-tone">grade</span>
+      </div>
+      -->
+      <br>
+    
+
+    <!-- dropdown -->
+    <div class="container">
+      <div class="row">
+        <!-- table  style="display: none;"-->
+        <div class="col-5 order-first d-flex justify-content-start w-50" style="height: 600px; overflow: scroll">
+          <table id="demo" class="table table-bordered border-primary table-primary table-striped align-middle">
+          </table>
+        </div>
+        <!-- table -->
+        <div class="col-1">
+          
+        </div>
+
+        <div id="g_div" class="col-5 order-last card" style="display: none; width: 33rem;">
+          <img id="k_img" src="" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 id="h_txt" class="card-title">
+              
+            </h5>
+            <p id="p_txt" class="card-text">
+            </p>
+            <a id="a_link" href="#" class="btn btn-primary">Go To Klinik</a>
+          </div>
+        </div>
+
+        
+               
+      </div>
+      <div class="row">
+
+        <div class="col-5 order-first" id="my_img_1"></div>
+
+        <div class="col-1"></div>
+        <!-- plot -->
+        <div class="col-5 order-last align-items-end" id="my_img"></div>
+        
+      </div>
+
+      <div class="row">
+
+        <div id="map" class="col"></div>
+        
+      </div>
+    </div> 
+
+    <!-- Modal -->
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-top">
+          <header class="w3-container w3-theme"> 
+            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">×</span>
+            <h4>Oh snap! We just showed you a modal..</h4>
+            <h5>Because we can <i class="fa fa-smile-o"></i></h5>
+          </header>
+          <div class="w3-padding">
+            <p>Cool huh? Ok, enough teasing around..</p>
+            <p>Go to our <a class="w3-btn" href="/w3css/default.asp">TEXT TEXT TEXT</a> TEXT!</p>
+          </div>
+          <footer class="w3-container w3-theme">
+            <p>Modal footer</p>
+          </footer>
+        </div>
+    </div>
+    
+    
+    <hr>
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+      <h2>UNSER TEAM</h2>
+      <p>ASHN Expro.</p>
+       <br>
+      <div class="w3-center">
+        
+        <h3>Anna</h3>
+        <p>Web Developerin</p>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <br>
+      
+      
+       
+        <h3>Hamdani Bakeira</h3>
+        <p>Web Developer</p>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <br>
+      
+      
+       
+        <h3>Salah Elyasi</h3>
+        <p>Web Developer</p>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <br>
+      
+      
+        
+        <h3>Malek Alrashid</h3>
+        <p>Web Developer</p>
+        
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+     
+    
+      
+      
+    
+    </div>
+
+    
+    
+    
+    <hr>
+    <br>
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-dark">
+      <p>Powered by <a target="_blank">AHSM Expro.</a></p>
+      <div style="height: 100px; position:relative;bottom:55px;" class="w3-tooltip w3-right">
+        <span class="w3-text w3-theme w3-padding">Nach oben</span>&nbsp;   
+        <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+        <i class="fa fa-chevron-circle-up"></i></span></a>
+      </div>
+    </footer>
+
+    
+    
+    
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body></html>
