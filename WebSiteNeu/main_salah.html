@@ -1,0 +1,333 @@
+<html><head><title>ASHM. Expro</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    
+    </head><body>
+    
+    <!-- Side Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+      <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+      <button class="w3-bar-item w3-button" onclick="w3_close()">Zurück <i class="fa fa-remove"></i></button>
+      <a href="web.html" class="w3-bar-item w3-button">Sentymental Analyse</a>
+      <a href="https://www.klinikbewertungen.de/" class="w3-bar-item w3-button" target="blank" >Klinikbewertungen</a>
+      <a href="https://www.nlga.niedersachsen.de/startseite/" class="w3-bar-item w3-button" target="blank" >Gesundheitsamt</a>
+      <a href="#" class="w3-bar-item w3-button">Link 4</a>
+    </nav>
+    
+    <!-- Header -->
+    <header class="w3-container w3-theme w3-padding" id="myHeader">
+      
+      <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-theme"></i> 
+      <div class="w3-center">
+      <h4>AHSM Expro.</h4>
+      <img src="ASHM_ExproLogo.png" alt="logo" style="width:100px;height:100px;">
+      <h1 class="w3-xxxlarge w3-animate-bottom">HospiFy</h1>
+      </div>
+      <div>
+      <p><h4 class="w3-center">Analyse der Bewertungen der Kliniken in Niedersachsen</h4></p>
+      
+    </header>
+    <br>
+    <br>
+    
+    
+    <!-- Modal -->
+    <div>
+      <p class="w3-center" > <h3 class="w3-center" >Befor Sie sich zu einer Klinik entscheiden, entdecken Sie, ob die Ihnen passt!!!</h3></p>
+      
+      <p class="w3-center">Nachdem unser Team mit der Analyse der Kundenzufridenheit der Kliniken für lange Zeit sich beschaftigt hat, 
+      teilt unser Team das Ergebniss mit Ihnen. </p>
+      <p class="w3-center" > <h2 class="w3-center" >Einfach eine Klinik auswählen, dann entdecken</h2></p>
+      </div>
+    <div class="sel_kli">
+      <form class="w3-center">
+        <label for="klinik">Klinik auswählen:</label>
+        <select name="klini" id="kliniken">
+        <option value="....">.....</option>
+          <option value="HEH Herzogin Elisabeth Hospital">HEH Herzogin Elisabeth Hospital</option>
+          <option value="Klinik Am Zuckerberg">Klinik Am Zuckerberg</option>
+          <option value="Klinikum Wolfsburg">Klinikum Wolfsburg</option>
+          <option value="Klinikum Peine">Klinikum Peine</option>
+          <option value="Krankenhaus St. Martini">Krankenhaus St. Martini</option>
+          <option value="DIAKOVERE Henriettenstift">DIAKOVERE Henriettenstift</option>
+          <option value="Eilenriede Klinik Hannover">Eilenriede Klinik Hannover</option>
+          <option value="Sophienklinik GmbH">Sophienklinik GmbH</option>
+          <option value="KRH Klinikum Agness Karll Laatzen">KRH Klinikum Agness Karll Laatzen</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Entdecken" class="w3-center">
+      </form>
+    </div>
+    <div class="w3-row-padding w3-center w3-margin-top">
+    <div class="l1 - l12">
+      <div class="w3-card w3-container" style="min-height:460px">
+      
+      <div>
+      <h3>Bewertungen</h3><br>
+      
+      <script>
+      fetch("Klinik_Am_Zuckerberg_2.json")
+          .then(function(res){
+            console.log(res.json());
+          })
+          .then(function(data){
+            console.log(data)
+
+          })
+
+
+      
+      </script>
+
+      
+      
+      
+      </p>
+      
+      </div>
+    </div>
+    <div class="map">
+    
+    </div>
+    
+    <div class="w3-container w3-padding-64 w3-center" id="team">
+      <h2>UNSER TEAM</h2>
+      <p>ASHN Expro.</p>
+       <br>
+      <div class="w3-center">
+        
+        <h3>Anna</h3>
+        <p>Web Developerin</p>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <br>
+      
+      
+       
+        <h3>Hamdani Bakeira</h3>
+        <p>Web Developer</p>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <br>
+      
+      
+       
+        <h3>Salah Elyasi</h3>
+        <p>Web Developer</p>
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+        <br>
+      
+      
+        
+        <h3>Malek Alrashid</h3>
+        <p>Web Developer</p>
+        
+        <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+     
+    
+      
+      
+    
+    </div>
+    
+  
+
+<!--    
+<div class="w3-center">
+  <br>
+  <a class="w3-button w3-theme">Button</a>
+  <a class="w3-button w3-theme">Button</a>
+  <a class="w3-button w3-theme-d3 w3-disabled">Button</a>
+  <br><br>
+  <a class="w3-button w3-circle w3-large w3-black"><i class="fa fa-plus"></i></a>
+  <a class="w3-button w3-circle w3-large w3-theme"><i class="fa fa-plus"></i></a>  
+  <a class="w3-button w3-circle w3-large w3-card-4"><i class="fa fa-plus"></i></a>
+</div>
+<br>
+<div class="w3-center">
+  <div class="w3-dropdown-hover">
+    <button class="w3-button w3-theme">Dropdown <i class="fa fa-caret-down"></i></button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+<hr>
+<div class="w3-center">
+  <h2>Pagination</h2>
+  
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">«</a>
+      <a href="#" class="w3-bar-item w3-button w3-theme w3-hover-theme">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">5</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-theme">»</a>
+    </div>
+  </div>
+</div>
+<br>
+-->
+    
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-dark">
+      <p>Powered by <a target="_blank">AHSM Expro.</a></p>
+      <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+        <span class="w3-text w3-theme w3-padding">Nach oben</span>&nbsp;   
+        <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+        <i class="fa fa-chevron-circle-up"></i></span></a>
+      </div>
+    </footer>
+    
+    <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+    <script>
+    function processFile() {
+      var fileSize = 0;
+      //get file
+      var theFile = document.getElementById("myFile");
+      
+      var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.csv|.txt)$/;
+      //check if file is CSV
+      if (regex.test(theFile.value.toLowerCase())) {
+      //check if browser support FileReader
+          if (typeof (FileReader) != "undefined") {
+        //get table element
+          var table = document.getElementById("myTable");
+          var headerLine = "";
+          //create html5 file reader object
+          var myReader = new FileReader();
+          // call filereader. onload function
+          myReader.onload = function(e) {
+              var content = myReader.result;
+              //split csv file using "\n" for new line ( each row)
+              var lines = content.split("\r");
+              //loop all rows
+              for (var count = 0; count < lines.length; count++) {
+                  //create a tr element
+                  var row = document.createElement("tr");
+                  //split each row content
+                  var rowContent = lines[count].split(",");
+                  //loop throw all columns of a row
+                  for (var i = 0; i < rowContent.length; i++) {
+                    //create td element 
+                      var cellElement = document.createElement("td");
+                      if (count == 0) {
+                          cellElement = document.createElement("th");
+                      } else {
+                          cellElement = document.createElement("td");
+                      }
+                      //add a row element as a node for table
+                      var cellContent = document.createTextNode(rowContent[i]);
+                      
+                      cellElement.appendChild(cellContent);
+                      //append row child
+                      row.appendChild(cellElement);
+                  }
+                  //append table contents
+                  myTable.appendChild(row);
+              }
+          }
+          //call file reader onload
+            myReader.readAsText(theFile.files[0]);
+          }
+          else 
+          {
+                alert("This browser does not support HTML5.");
+          }
+          
+      }
+      else {
+                  alert("Please upload a valid CSV file.");
+      }
+      return false;
+}
+//-----------------------------------------------
+    // Side navigation
+    function w3_open() {
+      var x = document.getElementById("mySidebar");
+      x.style.width = "100%";
+      x.style.fontSize = "40px";
+      x.style.paddingTop = "10%";
+      x.style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    
+    // Tabs
+    function openCity(evt, cityName) {
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      var activebtn = document.getElementsByClassName("testbtn");
+      for (i = 0; i < x.length; i++) {
+        activebtn[i].className = activebtn[i].className.replace(" w3-theme-dark", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " w3-theme-dark";
+    }
+    
+    var mybtn = document.getElementsByClassName("testbtn")[0];
+    mybtn.click();
+    
+    // Accordions
+    function myAccFunc(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    
+    // Slideshows
+    var slideIndex = 1;
+    
+    function plusDivs(n) {
+      slideIndex = slideIndex + n;
+      showDivs(slideIndex);
+    }
+    
+    function showDivs(n) {
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    
+    showDivs(1);
+    
+    // Progress Bars
+    function move() {
+      var elem = document.getElementById("myBar");   
+      var width = 1;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width == 100) {
+          clearInterval(id);
+        } else {
+          width++; 
+          elem.style.width = width + '%'; 
+          elem.innerHTML = width * 1  + '%';
+        }
+      }
+    }
+    </script>
+    
+    </body></html>
